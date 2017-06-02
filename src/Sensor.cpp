@@ -8,7 +8,7 @@ Sensor::Sensor(int pin, double min_voltage, double max_voltage, double min_value
 
 
 float Sensor::value() {
-  float value;
+  double value;
   for (unsigned int i = 0; i < NUMSAMPLES; i++) {
     value += analogRead(pin);
   }
